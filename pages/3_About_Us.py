@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('bbt.png')
+image = Image.open('pages/bbt.png')
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(

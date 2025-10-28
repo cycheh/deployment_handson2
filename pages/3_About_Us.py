@@ -1,4 +1,7 @@
 import streamlit as st
+from PIL import Image
+
+image = Image.open('bbt.png')
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
@@ -10,6 +13,8 @@ st.set_page_config(
 st.title("About this App")
 
 st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
+
+st.image(image, caption='A beautiful image', use_column_width=True)
 
 with st.expander("How to use this App"):
     st.write("1. Enter your prompt in the text area.")
